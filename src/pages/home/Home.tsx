@@ -1,5 +1,12 @@
 import SEO from '@/components/custom/utils/SEO'
 import React from 'react'
+import Hero from './component/Hero'
+import Features from './component/Feature'
+import Services from './component/Services'
+import Team from './component/Teams'
+import Testimonials from './component/Testimoniale'
+import Contact from './component/Contact'
+import Map from './component/Map'
 
 const Home: React.FC = () => {
     return (
@@ -12,7 +19,14 @@ const Home: React.FC = () => {
 
             {/* App Comoments */}
             <>
-                Home
+                <Hero />
+                <Features />
+                <Services />
+                <Team />
+                <Testimonials />
+                <Contact />
+                <Map />
+
             </>
         </>
     )

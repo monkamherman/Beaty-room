@@ -1,6 +1,7 @@
+import { BiSpa } from "react-icons/bi"; 
 import React, { useState } from 'react';
 
-const Header = () => {
+const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -13,7 +14,7 @@ const Header = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <i className="fas fa-spa text-2xl text-pink-600 mr-2"></i>
+              <i className="fas fa-spa text-2xl text-pink-600 mr-2"> <BiSpa /></i>
               <span className="text-xl font-bold text-gray-900">Élégance Beauty</span>
             </div>
           </div>

@@ -1,3 +1,8 @@
+import { BiSpa } from "react-icons/bi"; 
+import { FaTelegramPlane } from "react-icons/fa"; 
+import { AiOutlineWhatsApp } from "react-icons/ai"; 
+import { AiOutlineInstagram } from "react-icons/ai"; 
+import { CgFacebook } from "react-icons/cg"; 
 import React from 'react'
 import { Link } from 'react-router-dom'
 import {
@@ -42,7 +47,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4 flex items-center">
-              <i className="fas fa-spa mr-2 text-pink-400"></i> Élégance Beauty
+              <i className="fas fa-spa mr-2 text-pink-400"> <BiSpa /></i> Élégance Beauty
             </h3>
             <p className="text-gray-400">
               Salon d'esthétique mixte à Yaoundé-Melen, spécialisé en coiffure, massage, gommage et spa.
@@ -86,7 +91,7 @@ const Footer: React.FC = () => {
                 type="submit" 
                 className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-r-md"
               >
-                <i className="fas fa-paper-plane"></i>
+               <FaTelegramPlane />
               </button>
             </form>
           </div>
@@ -94,17 +99,17 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 mb-4 md:mb-0">
-            &copy; 2023 Élégance Beauty. Tous droits réservés.
+            &copy; 2025 Élégance Beauty. Tous droits réservés.
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-gray-400 hover:text-white">
-              <i className="fab fa-facebook-f"></i>
+              <CgFacebook />
             </a>
             <a href="#" className="text-gray-400 hover:text-white">
-              <i className="fab fa-instagram"></i>
+              <AiOutlineInstagram />
             </a>
             <a href="#" className="text-gray-400 hover:text-white">
-              <i className="fab fa-whatsapp"></i>
+              <AiOutlineWhatsApp />
             </a>
           </div>
         </div>

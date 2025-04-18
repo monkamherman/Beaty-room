@@ -7,7 +7,6 @@ import Team from './component/Teams'
 import Testimonials from './component/Testimoniale'
 import Contact from './component/Contact'
 import Map from './component/Map'
-import BookingSystem from './component/BookingSystem'
 import About from './component/About'
 
 const Home: React.FC = () => {
@@ -15,7 +14,7 @@ const Home: React.FC = () => {
         <>
             {/* Seo compoments */}
             <SEO
-                title='Welcome to iPhone Store Cameroon - Your Trusted Apple Partner'
+                title='Welcome to elegance beauty - Your Trusted Apple Partner'
                 description='Explore the latest iPhones and accessories at unbeatable prices. Enjoy a seamless shopping experience on our modern e-commerce platform.'
             />
 

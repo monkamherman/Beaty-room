@@ -14,7 +14,22 @@ const Team: React.FC = () => {
       image: 'https://randomuser.me/api/portraits/men/32.jpg',
       description: 'Expert en massages thérapeutiques et relaxation profonde.'
     },
-    // Ajouter les autres membres de l'équipe
+    {
+        name: 'Fatou D.',
+        role: 'Esthéticienne',
+        image: 'https://randomuser.me/api/portraits/women/65.jpg',
+        description: 'Spécialiste des soins du visage et des techniques d\'épilation. Passionnée par les produits naturels, elle crée des soins sur mesure pour chaque type de peau.',
+        experience: '6 ans d\'expérience',
+        specialties: ['Épilation définitive', 'Soins anti-âge', 'Gommages corporels']
+      },
+      {
+        name: 'Claire M.',
+        role: 'Responsable Spa',
+        image: 'https://randomuser.me/api/portraits/women/28.jpg',
+        description: 'Créatrice des forfaits bien-être et experte en rituels de beauté. Elle a travaillé dans des spas de luxe à Marrakech avant de rejoindre notre équipe.',
+        experience: '12 ans d\'expérience',
+        specialties: ['Rituels spa', 'Thalassothérapie', 'Soins énergétiques']
+      }
   ];
 
   return (

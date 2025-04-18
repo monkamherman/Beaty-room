@@ -1,19 +1,41 @@
+import { BsWhatsapp } from "react-icons/bs"; 
+import { AiOutlineInstagram } from "react-icons/ai"; 
+import { CgFacebook } from "react-icons/cg"; 
+import { AiFillClockCircle } from "react-icons/ai"; 
+import { BiEnvelope } from "react-icons/bi"; 
+import { AiFillPhone } from "react-icons/ai"; 
+import { FaMapMarkerAlt } from "react-icons/fa"; 
 import React from 'react';
 
 const Contact: React.FC = () => {
   const contactInfo = [
     {
-      icon: 'fas fa-map-marker-alt',
+      icon: <FaMapMarkerAlt />,
       title: 'Adresse',
       details: ['Rue de Melen, Yaoundé, Cameroun'],
       link: { text: 'Voir sur la carte', icon: 'fas fa-directions' }
     },
     {
-      icon: 'fas fa-phone-alt',
+      icon: <AiFillPhone />,
       title: 'Téléphone',
       details: ['+237 699 999 999', '+237 677 777 777']
     },
-    // Ajouter les autres informations de contact
+    {
+        icon: <BiEnvelope />,
+        title: 'Email',
+        details: ['contact@elegancebeauty.cm', 'reservation@elegancebeauty.cm'],
+        link: { text: 'Envoyer un email', icon: 'fas fa-paper-plane' }
+      },
+      {
+        icon: <AiFillClockCircle />,
+        title: 'Horaires',
+        details: [
+          'Lundi - Vendredi: 9h - 19h',
+          'Samedi: 9h - 17h',
+          'Dimanche: Sur rendez-vous',
+          'Jours fériés: 10h - 15h'
+        ]
+      }
   ];
 
   return (
@@ -77,7 +99,7 @@ const Contact: React.FC = () => {
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-start">
                     <div className="flex-shrink-0 bg-pink-100 p-3 rounded-lg text-pink-600">
-                      <i className={`${info.icon}`}></i>
+                      <i className={`$`}>{info.icon}</i>
                     </div>
                     <div className="ml-4">
                       <h4 className="text-lg font-medium text-gray-800">{info.title}</h4>
@@ -98,13 +120,13 @@ const Contact: React.FC = () => {
                 <h4 className="text-lg font-medium text-gray-800 mb-4">Nous suivre</h4>
                 <div className="flex space-x-4">
                   <a href="#" className="bg-pink-600 hover:bg-pink-700 text-white p-3 rounded-full">
-                    <i className="fab fa-facebook-f"></i>
+                    <CgFacebook />
                   </a>
                   <a href="#" className="bg-pink-600 hover:bg-pink-700 text-white p-3 rounded-full">
-                    <i className="fab fa-instagram"></i>
+                    <AiOutlineInstagram />
                   </a>
                   <a href="#" className="bg-pink-600 hover:bg-pink-700 text-white p-3 rounded-full">
-                    <i className="fab fa-whatsapp"></i>
+                    <BsWhatsapp />
                   </a>
                 </div>
               </div>

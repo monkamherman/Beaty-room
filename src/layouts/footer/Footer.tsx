@@ -12,8 +12,28 @@ import { TextAnimate } from "@/components/ui/text-animate";
 
 const Footer: React.FC = () => {
   const footerLinks = {
-    services: ['Coiffure', 'Massages', 'Gommages & Soins', 'Spa Complet'],
-    informations: ['À propos', 'Équipe', 'Témoignages', 'FAQ']
+    services: [
+      'Coiffure',
+      'Massages', 
+      'Gommages & Soins',
+      'Spa Complet',
+      'Beauté des mains/pieds',
+      'Maquillage'
+    ],
+    informations: [
+      'À propos',
+      'Équipe',
+      'Témoignages',
+      'FAQ',
+      'Blog beauté',
+      'Galerie photos'
+    ],
+    legal: [
+      'Mentions légales',
+      'Politique de confidentialité',
+      'Conditions générales',
+      'Politique d\'annulation'
+    ]
   };
 
   return (

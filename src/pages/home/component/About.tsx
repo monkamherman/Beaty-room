@@ -1,19 +1,22 @@
+import { AiFillSmile } from "react-icons/ai"; 
+import { FaLeaf } from "react-icons/fa"; 
+import { FaAward } from "react-icons/fa"; 
 import React from 'react';
 
 const About: React.FC = () => {
   const features = [
     {
-      icon: 'fas fa-award',
+      icon: <FaAward />,
       title: 'Certifications',
       description: 'Nos esthéticiennes sont diplômées des meilleures écoles'
     },
     {
-      icon: 'fas fa-leaf',
+      icon: <FaLeaf />,
       title: 'Approche naturelle',
       description: 'Nous privilégions les produits naturels et locaux'
     },
     {
-      icon: 'fas fa-smile',
+      icon: <AiFillSmile />,
       title: 'Satisfaction client',
       description: 'Plus de 2000 clients satisfaits depuis notre ouverture'
     }
@@ -26,16 +29,23 @@ const About: React.FC = () => {
           <div className="mb-12 lg:mb-0">
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Notre Histoire</h2>
             <p className="text-gray-600 mb-4">
-              Fondé en 2018 à Yaoundé-Melen, Élégance Beauty est rapidement devenu une référence en matière de soins esthétiques et de bien-être. Notre salon mixte a été créé avec la vision d'offrir un espace où hommes et femmes pourraient prendre soin d'eux dans un environnement chic et relaxant.
-            </p>
-            <p className="text-gray-600 mb-6">
-              Nous sélectionnons avec soin nos produits et formons continuellement notre équipe pour vous proposer des services à la pointe des tendances tout en respectant les traditions africaines de beauté.
-            </p>
+  Fondé en 2018 à Yaoundé-Melen par Claire M., une experte en esthétique avec plus de 15 ans d'expérience internationale, 
+  Élégance Beauty est rapidement devenu une référence en matière de soins esthétiques et de bien-être. Notre salon mixte 
+  a été créé avec la vision d'offrir un espace où hommes et femmes pourraient prendre soin d'eux dans un environnement 
+  chic et relaxant, combinant savoir-faire international et traditions locales.
+</p>
+<p className="text-gray-600 mb-6">
+  Nous sélectionnons avec soin nos produits parmi les meilleures marques africaines et internationales, et formons 
+  continuellement notre équipe pour vous proposer des services à la pointe des tendances tout en respectant les 
+  traditions africaines de beauté. Notre engagement : qualité, hygiène irréprochable et satisfaction client.
+</p>
             <div className="space-y-4">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-start">
                   <div className="flex-shrink-0 bg-pink-100 p-3 rounded-lg text-pink-600">
-                    <i className={`${feature.icon}`}></i>
+                    <i className={`$`}>
+                    {feature.icon}
+                    </i>
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-gray-800">{feature.title}</h3>

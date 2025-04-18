@@ -7,6 +7,8 @@ import Team from './component/Teams'
 import Testimonials from './component/Testimoniale'
 import Contact from './component/Contact'
 import Map from './component/Map'
+import BookingSystem from './component/BookingSystem'
+import About from './component/About'
 
 const Home: React.FC = () => {
     return (
@@ -23,8 +25,10 @@ const Home: React.FC = () => {
                 <Features />
                 <Services />
                 <Team />
+                <About />
                 <Testimonials />
                 <Contact />
+                {/* <BookingSystem /> */}
                 <Map />
 
             </>

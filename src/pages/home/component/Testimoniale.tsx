@@ -8,7 +8,46 @@ const Testimonials: React.FC = () => {
       image: 'https://randomuser.me/api/portraits/women/32.jpg',
       comment: '"Je me fais toujours tresser chez Élégance Beauty. Aïcha est une artiste et les produits utilisés sont de qualité. Je recommande vivement !"'
     },
-    // Ajouter les autres témoignages
+    {
+        name: 'Paul D.',
+        rating: 4.5,
+        image: 'https://randomuser.me/api/portraits/men/44.jpg',
+        comment: '"Le massage de Jean m\'a littéralement sauvé le dos après des mois de douleurs. Professionnel et à l\'écoute. Je reviendrai !"',
+        service: 'Massage thérapeutique',
+        date: '2 avril 2023'
+      },
+      {
+        name: 'Amina K.',
+        rating: 5,
+        image: 'https://randomuser.me/api/portraits/women/75.jpg',
+        comment: '"Forfait spa offert pour mon anniversaire. Une journée de pur bonheur ! L\'équipe est aux petits soins et l\'endroit magnifique."',
+        service: 'Spa journée',
+        date: '22 février 2023'
+      },
+      {
+        name: 'Sophie L.',
+        rating: 5,
+        image: 'https://randomuser.me/api/portraits/women/63.jpg',
+        comment: '"Maquillage de mariée parfait ! Claire a su comprendre mon style et a fait un travail exceptionnel qui a tenu toute la journée."',
+        service: 'Maquillage mariée',
+        date: '10 juin 2023'
+      },
+      {
+        name: 'Marc A.',
+        rating: 4,
+        image: 'https://randomuser.me/api/portraits/men/29.jpg',
+        comment: '"Première expérience dans un salon mixte très positive. Coupe moderne et conseils personnalisés. Ambiance détendue."',
+        service: 'Coupe homme',
+        date: '5 mai 2023'
+      },
+      {
+        name: 'Nadège F.',
+        rating: 5,
+        image: 'https://randomuser.me/api/portraits/women/82.jpg',
+        comment: '"Soin du visage avec Fatou a redonné éclat à ma peau. Produits naturels et efficaces. Je reviens chaque mois !"',
+        service: 'Soin du visage',
+        date: '18 janvier 2023'
+      }
   ];
 
   return (
